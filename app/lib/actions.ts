@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 import postgres from "postgres";
 import { error } from "console";
 import { signIn } from "@/auth";
-import { AuthError } from "next-auth";
+import { AuthError } from "@auth/core/errors";
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
