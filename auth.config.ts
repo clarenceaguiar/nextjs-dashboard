@@ -1,4 +1,6 @@
-export const authConfig = {
+import type { NextAuthConfig } from "@auth/core";
+
+export const authConfig: NextAuthConfig = {
   pages: {
     signIn: "/login",
   },
