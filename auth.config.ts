@@ -1,4 +1,6 @@
-export const authConfig = {
+import type { NextAuthConfig } from "next-auth";
+
+export const authConfig: NextAuthConfig = {
   pages: {
     signIn: "/login",
   },
@@ -16,4 +18,4 @@ export const authConfig = {
     },
   },
   providers: [], // Add providers with an empty array for now
-} as const;
+} satisfies NextAuthConfig;
